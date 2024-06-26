@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 提醒方式选择 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="提醒方式选择"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_alert_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_sound_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="只有声音" />
+
+        <RadioButton
+            android:id="@+id/radio_vibration_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="只有震动" />
+
+        <RadioButton
+            android:id="@+id/radio_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="都有" />
+    </RadioGroup>
+
+    <!-- 音效选择 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="音效选择"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
